@@ -12,6 +12,13 @@ import { LazyDiv } from "../lazyDiv"
 const firstDayOfWeek = WEDDING_DATE.startOf("month").day()
 const daysInMonth = WEDDING_DATE.daysInMonth()
 
+// 날짜 아래에 표시할 짧은 문구 (결혼식이 있는 달 기준)
+const DAY_LABELS: Record<number, string> = {
+  7: "설날",
+  9: "대체 휴일",
+  27: "결혼식",
+}
+
 /**
  * 결혼식 날짜를 표시하는 달력과 디데이 카운트다운 컴포넌트입니다.
  *
@@ -107,13 +114,35 @@ export const Calendar = () => {
             classes.push("wedding-date")
           }
 
+          // 이 날짜 아래에 표시할 문구 (없으면 undefined)
+          const label = DAY_LABELS[date]
+
           return (
             <div
               key={i}
               className={classes.length ? classes.join(" ") : undefined}
+              style={{ position: "relative" }}
             >
               <span>{date}</span>
               {isWeddingDate && <div className="heart" />}
+              {label && (
+                <div
+                  style={{
+                    position: "absolute",
+                    left: 0,
+                    right: 0,
+                    top: "calc(50% + 0.9rem)",
+                    fontSize: "0.5rem",
+                    lineHeight: 1,
+                    textAlign: "center",
+                    whiteSpace: "nowrap",
+                    color: "red",
+                    pointerEvents: "none",
+                  }}
+                >
+                  {label}
+                </div>
+              )}
             </div>
           )
         })}
