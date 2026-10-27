@@ -10,6 +10,7 @@ import { GuestBook } from "./component/guestbook"
 import { LazyDiv } from "./component/lazyDiv"
 import { ShareButton } from "./component/shareButton"
 import { STATIC_ONLY } from "./env"
+import { Bgm } from "./component/bgm"
 
 /**
  * 메인 애플리케이션 컴포넌트입니다.
