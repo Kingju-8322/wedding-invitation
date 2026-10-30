@@ -27,7 +27,7 @@ const DAY_OF_WEEK = [
 export const Cover = () => {
   return (
     <LazyDiv className="card cover">
-      <div className="cover-eyebrow">THE WEDDING OF</div>
+      <div className="cover-eyebrow">WE ARE GETTING MARRIED</div>
       {/* 상단 날짜 표시 */}
       <div className="wedding-date">
         {WEDDING_DATE.format("YYYY")}
@@ -51,7 +51,7 @@ export const Cover = () => {
           <path d="M30 35C19 33 20 24 20 24C29 24 33 28 30 35ZM42 31C32 29 33 19 33 19C42 20 46 24 42 31ZM52 22C44 18 48 9 48 9C56 13 57 17 52 22ZM90 35C101 33 100 24 100 24C91 24 87 28 90 35ZM78 31C88 29 87 19 87 19C78 20 74 24 78 31ZM68 22C76 18 72 9 72 9C64 13 63 17 68 22Z" />
         </g>
       </svg>
-      <div className="subtitle">Save the date for the wedding of</div>
+      <div className="subtitle">Together, always</div>
       {/* 이름 표시 */}
       <div className="names">
         {GROOM_FULLNAME}

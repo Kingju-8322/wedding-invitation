@@ -62,7 +62,7 @@ export const Calendar = () => {
 
   return (
     <LazyDiv className="card calendar">
-      <h2 className="english">The Wedding Day</h2>
+      <h2 className="english"><span className="section-kicker">THE WEDDING DAY</span>우리의 소중한 날</h2>
       <div className="break" />
       {/* 예식 일시 표시 */}
       {WEDDING_DATE.format(WEDDING_DATE_FORMAT)}

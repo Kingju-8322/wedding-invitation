@@ -28,7 +28,7 @@ export const Invitation = () => {
   return (
     <>
       <LazyDiv className="card invitation">
-        <h2 className="english">Invitation</h2>
+        <h2 className="english"><span className="section-kicker">INVITATION</span>소중한 분들을 초대합니다</h2>
 
         <div className="break" />
 

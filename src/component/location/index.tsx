@@ -15,7 +15,7 @@ export const Location = () => {
     <>
       {/* 지도 및 주소 섹션 */}
       <LazyDiv className="card location">
-        <h2 className="english">Location</h2>
+        <h2 className="english"><span className="section-kicker">LOCATION</span>오시는 길</h2>
         <div className="addr">
           {LOCATION}
           <div className="detail">{LOCATION_ADDRESS}</div>

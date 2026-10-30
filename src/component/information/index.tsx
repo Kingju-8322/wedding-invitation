@@ -12,7 +12,7 @@ import { AttendanceInfo } from "./attendance"
 export const Information1 = () => {
   return (
     <>
-      <h2 className="english">Information</h2>
+      <h2 className="english"><span className="section-kicker">INFORMATION</span>마음을 담은 안내</h2>
       <div className="info-card">
         <div className="label">식사 안내</div>
         <div className="content">

@@ -13,17 +13,17 @@
 
 :root {
   /* 화이트 지면과 샴페인 포인트를 사용하는 청첩장 테마 */
-  --theme-color: #82704f;
-  --theme-bg-color: #f7f6f3;
-  --alt-color: #78674c;
-  --alt-bg-color: #f8f7f4;
-  --dark-color: #34332f;
+  --theme-color: #806957;
+  --theme-bg-color: #e9e4de;
+  --alt-color: #806957;
+  --alt-bg-color: #eee7df;
+  --dark-color: #514a43;
   --dark-grey-color: #d5d0c7;
   --light-grey-color: #ebe7df;
-  --light-color: #ffffff;
-  --white-color: #ffffff;
+  --light-color: #f5f0e9;
+  --white-color: #f5f0e9;
   --red-color: #a35f5c;
-  font-family: "MapoGoldenPier", Georgia, serif;
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   font-size: 20px;
   @media (max-width: 500px) { font-size: 4vw; }
 }
