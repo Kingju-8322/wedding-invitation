@@ -297,7 +297,7 @@ h2.english {
   &::after { margin-top: 1.15rem; width: 1rem; }
 }
 .cover {
-  .image-wrapper { border: 0; padding: 0; border-radius: 9rem 9rem 2px 2px; }
+  .image-wrapper { border: 0; padding: 0; border-radius: 0; }
   .wedding-date { font-size: 1.3rem; }
   .subtitle { font-size: 1.7rem; }
   .names { font-family: "Nanum Myeongjo", serif; font-size: 1.25rem; margin: 1.05rem 0 1.2rem; }
@@ -361,3 +361,33 @@ h2.english { font-family: "Nanum Myeongjo", "Batang", serif; font-weight: 700; }
   .countdown-wrapper .countdown { background: #eae0d3; }
   .countdown-wrapper .message .d-day { color: #a12743; font-weight: 700; }
 }
+
+/* 안내 카드는 제목까지 박스 안에 넣어 경계와 내용의 위계를 분명하게 합니다. */
+.information .info-card {
+  margin: 0;
+  padding: 1.6rem 1.2rem;
+  border: 1px solid #bca98f;
+  border-radius: 4px;
+  background: #f1e9dd;
+  .label {
+    position: static;
+    transform: none;
+    padding: 0 0 0.9rem;
+    margin: 0 0 1.1rem;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #cfbfaa;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #685540;
+  }
+  .content { line-height: 2; }
+}
+.background .card-view .card-group .card.information {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  &::after { display: none; }
+  &:last-child { padding-bottom: 3rem; }
+}
+.information .info-card + .info-card { margin-top: 1.5rem; }
