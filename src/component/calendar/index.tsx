@@ -124,7 +124,7 @@ export const Calendar = () => {
               style={{ position: "relative" }}
             >
               <span>{date}</span>
-              {isWeddingDate && <div className="heart" />}
+              {isWeddingDate && <div className="date-seal" />}
               {label && (
                 <div
                   style={{
@@ -136,7 +136,7 @@ export const Calendar = () => {
                     lineHeight: 1,
                     textAlign: "center",
                     whiteSpace: "nowrap",
-                    color: "red",
+                    color: "var(--red-color)",
                     pointerEvents: "none",
                   }}
                 >

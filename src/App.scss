@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use "./component/cover";
 @use "./component/invitation";
 @use "./component/button";
@@ -11,22 +12,20 @@
 @use "./component/shareButton";
 
 :root {
-  --theme-color: #ff8585;
-  --theme-bg-color: #ffe7e7;
-  --alt-color: #c28080;
-  --alt-bg-color: #f4f0f0;
-  --dark-color: #282c34;
-  --dark-grey-color: #d2d2d2;
-  --light-grey-color: #eaeaea;
-  --light-color: #f9f9f9;
+  /* 화이트 지면과 샴페인 포인트를 사용하는 청첩장 테마 */
+  --theme-color: #82704f;
+  --theme-bg-color: #f7f6f3;
+  --alt-color: #78674c;
+  --alt-bg-color: #f8f7f4;
+  --dark-color: #34332f;
+  --dark-grey-color: #d5d0c7;
+  --light-grey-color: #ebe7df;
+  --light-color: #ffffff;
   --white-color: #ffffff;
-  --red-color: #ff0000;
-
-  font-family: "MapoGoldenPier";
+  --red-color: #a35f5c;
+  font-family: "MapoGoldenPier", Georgia, serif;
   font-size: 20px;
-  @media (max-width: 500px) {
-    font-size: 4vw;
-  }
+  @media (max-width: 500px) { font-size: 4vw; }
 }
 
 @media print {
@@ -211,3 +210,5 @@ h2 {
 div.break {
   height: 1rem;
 }
+
+@include meta.load-css("./white-theme");

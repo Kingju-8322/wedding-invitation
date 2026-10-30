@@ -49,22 +49,15 @@ export const Bgm = () => {
     <button
       onClick={toggle}
       aria-label={playing ? "음악 끄기" : "음악 켜기"}
-      style={{
-        position: "fixed",
-        top: 12,
-        right: 12,
-        zIndex: 1000,
-        width: 40,
-        height: 40,
-        borderRadius: "50%",
-        border: "none",
-        background: "rgba(255,255,255,0.85)",
-        boxShadow: "0 1px 4px rgba(0,0,0,0.25)",
-        fontSize: 18,
-        cursor: "pointer",
-      }}
+      className="bgm-toggle"
+      aria-pressed={playing}
     >
-      {playing ? "🔊" : "🔇"}
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M9 17V5l11-2v12M9 8l11-2" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+        <ellipse cx="6" cy="17" rx="3" ry="2.3" stroke="currentColor" strokeWidth="1.4" />
+        <ellipse cx="17" cy="15" rx="3" ry="2.3" stroke="currentColor" strokeWidth="1.4" />
+        {!playing && <path d="M3 3l18 18" stroke="currentColor" strokeWidth="1.4" />}
+      </svg>
     </button>
   )
 }
