@@ -300,12 +300,12 @@ h2.english {
   .image-wrapper { border: 0; padding: 0; border-radius: 9rem 9rem 2px 2px; }
   .wedding-date { font-size: 1.3rem; }
   .subtitle { font-size: 1.7rem; }
-  .names { font-family: "MapoGoldenPier", serif; font-size: 1.25rem; margin: 1.05rem 0 1.2rem; }
+  .names { font-family: "Nanum Myeongjo", serif; font-size: 1.25rem; margin: 1.05rem 0 1.2rem; }
   .info { font-size: 0.78rem; line-height: 1.9; }
 }
 .invitation {
-  .content { font-family: "MapoGoldenPier", serif; font-size: 0.96rem; line-height: 2; margin: 0.2rem 0; }
-  .name { font-family: "MapoGoldenPier", serif; font-size: 1rem; }
+  .content { font-family: "Nanum Myeongjo", serif; font-size: 0.96rem; line-height: 2; margin: 0.2rem 0; }
+  .name { font-family: "Nanum Myeongjo", serif; font-size: 1rem; }
 }
 .calendar .calendar-wrapper > div.head { background: transparent; }
 .calendar .calendar-wrapper { border-color: #ced1c5; }
@@ -332,4 +332,32 @@ button.button.button-style-1 {
 .share-button .ktalk-share { background: #f5eee5; border-color: #cdbdac; border-radius: 6px; }
 @media (max-width: 500px) {
   :root { font-size: 4vw; }
+}
+
+/* 나눔명조를 로컬 제공해 기기별 글꼴 차이 없이 단정하게 표시합니다. */
+:root { font-family: "Nanum Myeongjo", "Batang", serif; --red-color: #c13238; }
+button, input, textarea, button.button.button-style-1 { font-family: "Nanum Myeongjo", "Batang", serif; }
+.cover .subtitle, .share-button::before { font-family: Georgia, serif; font-style: italic; font-size: 1.05rem; letter-spacing: 0.015em; }
+.cover .names { font-weight: 700; letter-spacing: 0.08em; }
+h2.english { font-family: "Nanum Myeongjo", "Batang", serif; font-weight: 700; }
+.background .card-view .card-group .card.calendar { background: #f5eee5; }
+.calendar {
+  .calendar-wrapper { border-color: #d9caba; padding-bottom: 1.2rem; }
+  .calendar-wrapper > div { min-height: 3.1rem; }
+  .calendar-wrapper > div.holiday > span { color: #c13238; font-weight: 700; }
+  .calendar-date-label {
+    position: absolute; left: 0; right: 0; top: calc(50% + 0.9rem);
+    font-size: 0.55rem; line-height: 1.2; text-align: center; white-space: nowrap;
+    color: #c13238; font-weight: 700; pointer-events: none;
+  }
+  .calendar-wrapper > div.wedding-date {
+    > span { color: #fff8f1; font-weight: 700; font-size: 1.03rem; }
+    > .date-seal {
+      width: 2.05rem; height: 2.05rem; background: #a83e54;
+      box-shadow: 0 0 0 3px #f5eee5, 0 0 0 4px #b8757f;
+    }
+    .calendar-date-label { color: #a12743; top: calc(50% + 1.35rem); font-size: 0.58rem; }
+  }
+  .countdown-wrapper .countdown { background: #eae0d3; }
+  .countdown-wrapper .message .d-day { color: #a12743; font-weight: 700; }
 }

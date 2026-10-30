@@ -127,18 +127,7 @@ export const Calendar = () => {
               {isWeddingDate && <div className="date-seal" />}
               {label && (
                 <div
-                  style={{
-                    position: "absolute",
-                    left: 0,
-                    right: 0,
-                    top: "calc(50% + 0.9rem)",
-                    fontSize: "0.5rem",
-                    lineHeight: 1,
-                    textAlign: "center",
-                    whiteSpace: "nowrap",
-                    color: "var(--red-color)",
-                    pointerEvents: "none",
-                  }}
+                  className="calendar-date-label"
                 >
                   {label}
                 </div>
