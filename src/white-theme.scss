@@ -257,7 +257,7 @@ body.modal-open .bgm-toggle { visibility: hidden; }
 }
 
 /* 소프트 무드: 하나의 세로 지면 안에서 섹션의 호흡을 통일합니다. */
-:root { --section-sage: #e8eae3; --section-rose: #eee2dc; }
+:root { --section-sage: #e8eae3; --section-info: #f5f0e9; }
 .background {
   padding: 0;
   .card-view {
@@ -275,7 +275,7 @@ body.modal-open .bgm-toggle { visibility: hidden; }
         &.calendar { background: var(--section-sage); }
         &.gallery { background: #f3ece4; }
         &.location { padding: 3.7rem 1.5rem; }
-        &.information { background: var(--section-rose); }
+        &.information { background: var(--section-info); }
       }
     }
   }
@@ -320,10 +320,10 @@ button.button.button-style-1 {
   &:hover { background: #e8ded2; }
 }
 .information .info-card {
-  background: #f4ebe4;
-  border: 1px solid #d9c7bc;
+  background: #f0e8dd;
+  border: 1px solid #d6c9b8;
   border-radius: 8px;
-  .label { background: var(--section-rose); }
+  .label { background: var(--section-info); }
 }
 .modal-background > .modal { background: #f5f0e9; border-radius: 10px; }
 .modal-background > .modal .header { background: #f5f0e9; }
