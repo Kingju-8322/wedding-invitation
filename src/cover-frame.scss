@@ -1,0 +1,21 @@
+/* 메인 사진: 웜 베이지 액자. App.scss 맨 위에서 @use "./cover-frame"; 로 불러옵니다. */
+.background .card-view .card-group .card.cover .image-wrapper {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  padding: 6px;
+  border: 1px solid #cbbca7;
+  border-radius: 0;
+  background: #faf6ef;
+  box-shadow: 0 4px 16px rgba(86, 66, 43, 0.09);
+  overflow: hidden;
+}
+.background .card-view .card-group .card.cover .image-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 0;
+}
